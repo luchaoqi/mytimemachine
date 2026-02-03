@@ -183,7 +183,7 @@ We recommend starting with a value of `7`.
 We provide code to run inference after training the model:
 
 ```python
-python helper.py --img_dir={path_to_test_data} --model_path={path_to_experiment_saving_dir} --blender --output_dir={path_to_output_dir}
+python helper.py --img_dir={path_to_test_data_dir} --model_path={path_to_experiment_saving_dir} --blender --output_dir={path_to_output_dir}
 ```
 
 For example, you may use this [checkpoint](https://drive.google.com/file/d/1RvQ-qTVHwYYMtBYtbbEEB_3Vex8GfB9U/view?usp=sharing), trained on Al Pacino (ages 30–70) with `adaptive_w_norm_lambda=7`, and obtain the results shown below. The input is on the left, followed by the predicted appearance at every 10-year interval from age 0 to 100.
@@ -193,7 +193,7 @@ For example, you may use this [checkpoint](https://drive.google.com/file/d/1RvQ-
 For pre-trained (SAM) results:
 
 ```python
-python helper.py --img_dir={path_to_test_data} --desc='elaine_sam_pretrained' --output_dir={path_to_output_dir}
+python helper.py --img_dir={path_to_test_data_dir} --desc='elaine_sam_pretrained' --output_dir={path_to_output_dir}
 ```
 
 
